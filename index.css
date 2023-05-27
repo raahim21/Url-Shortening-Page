@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Open+Sans&family=Poppins:wght@500;700&display=swap');
+
+
+.img-cont{
+  position: relative;
+  background-color: hsl(257, 27%, 26%);
+  width: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+.stick{
+  position:sticky;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 25px;
+  gap: 2em;
+  margin-bottom: 10vh;
+  z-index: 4;
+  background-color: rgb(175, 162, 162);
+  color: white;
+  overflow: hidden;
+}
+.navitems ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+ul{
+  gap: 1rem;
+}
+
+.navitems{
+  width: 100%;
+}
+ul li:nth-of-type(4){
+  margin-left: auto;
+  padding-right: 25px;
+}
+ul li:nth-of-type(5){
+  padding-right: 25px;
+}
+
+.container{
+  display: flex; 
+  padding: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.flex-item{
+  margin: 3px;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+.box{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: clamp(20px, 2vw, 24px);
+
+}
+
+
+.heading{
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+}
+.img-con img{
+  max-width: 100%;
+  min-height: 35vh;
+}
+
+form{
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  background: hsl(257, 27%, 26%);
+}
+.container-final{
+  margin-bottom: 50px;
+}
+.form-wrapper{
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 45px;
+
+  /*  */
+}
+input{
+  width: 100%;
+  min-height: 2rem;
+}
+.container-wrapper{
+  background-color: hsl(0, 0%, 75%);
+}
+.flex-correct{
+  width: 83%;
+  margin: auto;
+  flex-grow: 1;
+  
+}
+.correct-wrapper{
+  display: flex;
+  flex: 1;
+  padding: 1em;
+  margin-bottom: 3px;
+}
+
+.h3{
+  margin-left: auto;
+  padding-right: 20px;
+  color: green;
+}
+
+.trick{
+  padding: 1rem;
+  min-height: 40vh;
+  width: 83%;
+  margin: auto;
+  display: flex;
+}
+.card{
+  margin: 2px;
+  flex-grow: 1;
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+.s{
+  align-self: center;
+}
+.t{
+  align-self: flex-end;
+}
+.p{
+  max-width: 294px;
+  margin: auto;
+  font-size: clamp(0.9rem, 1vw, 20px);
+}
+.card-text{
+  margin: auto;
+}
+.footer1{
+  position: absolute; z-index:1;margin: auto; 
+  left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column;
+  font-size: clamp(5px, 1.8vw, 25px);
+  z-index: 1;
+}
+.text-wrapper{
+  flex-basis: 100%; display: flex;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#Api_input{
+  flex-basis: 75%;
+}
+#api-btn{
+  flex-basis: 15%;
+}
+
+.own{
+  margin-bottom: 20px;
+}
+
+
+.last-footer{
+  background-color: hsl(260, 8%, 14%);
+}
+@media screen and (max-width:1024px){
+ .container{
+  flex-direction: column;
+ }
+ .trick{
+  flex-direction: column;
+ }
+ .s, .t{
+  align-self: auto;
+ }
+ .card-wrapper{
+  display: flex;
+  flex-direction: row;
+ }
+ .text-wrapper{
+  display: block;
+ }
+ .correct-wrapper{
+  display: block;
+ }
+ .text-wrapper{
+  text-align: center;
+ }
+ .btn-div{
+  display: flex;
+  justify-content: center;
+ }
+ #Api_form{
+  display: block;
+ }
+ #api-btn{
+  width: 100%;
+  height: 30px;
+ }
+ .btn-copy{
+  width: 100%;
+ }
+}
+
+@media screen and (max-width:767px){
+ .container{
+  padding: 1rem;
+ }
+ .heading{
+  text-align: center;
+ }
+ .flex-correct{
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+ }
+ .correct-wrapper{
+  padding: 1rem; 
+ }
+
+ .card-wrapper{
+  flex-direction: column;
+ }
+ 
+ form{
+  padding: 1rem;
+ }
+
+ #Api_input{
+  margin-bottom: 5px;
+ }
+ .heading{
+  max-width: 100%;
+ }
+ .form-wrapper{
+  margin-bottom: 10px;
+ }
+ .container-final{
+  margin-bottom: 10px;
+ }
+
+ .center-heading{
+  margin-bottom: 25px;
+ }
+ .footer-wrapper{
+  flex-direction: column;
+ }
+ .wrp{
+  flex-direction: column;
+  margin: auto;
+ }
+ .Features, .Resources, .Companies{
+  margin-bottom: 2rem;
+ }
+ .footer-logo{
+  margin-bottom: 1.5rem;
+ }
+}
+
+.fea, .res, .com{
+  color: white;
+ 
+}
+
+.footer-heading{
+  color: white;
+  text-align: center;
+}
+
+.o{
+  color: hsl(0, 0%, 75%);
+}
+.footer-wrapper{
+  display: flex;
+  padding: 2rem;
+}
+.footer-logo{
+  flex-basis: 32%;
+}
+
+
+.wrp{
+  display: flex;
+  flex-basis: 68%;
+  justify-content: space-evenly;
+  /* margin: auto; */
+}
+.Features, .Resources, .Companies, .social-media{
+  flex-grow: 1;
+}
+
