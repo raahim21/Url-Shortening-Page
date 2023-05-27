@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Open+Sans&family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Open+Sans&family=Poppins:wght@500;900&display=swap');
 
 
 .img-cont{
@@ -66,6 +66,7 @@ ul li:nth-of-type(5){
   justify-content: center;
   align-content: center;
   font-size: clamp(20px, 2vw, 24px);
+  flex-direction: column;
 
 }
 
@@ -226,6 +227,8 @@ input{
  }
  .heading{
   text-align: center;
+  font-family: 900;
+
  }
  .flex-correct{
   width: 100%;
